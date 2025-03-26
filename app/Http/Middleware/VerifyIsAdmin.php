@@ -20,6 +20,6 @@ class VerifyIsAdmin
 
             return $next($request);
         }
-        abort(403,'you not allowed to access to this page');
+        return redirect('/');
     }
 }
