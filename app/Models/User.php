@@ -63,4 +63,5 @@ class User extends Authenticatable implements FilamentUser
             ->map(fn (string $name) => Str::of($name)->substr(0, 1))
             ->implode('');
     }
+    
 }
